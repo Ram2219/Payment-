@@ -1,16 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Pay ₹5000</title>
-</head>
-<body style="text-align:center; font-family:Arial; margin-top:50px;">
-    <h1>Pay ₹5000</h1>
-    <p>Click the button below to pay via UPI.</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIAT Fee Portal</title>
 
-    <a href="upi://pay?pa=6397008427@fam&pn=Ram%20Singh&am=5000&cu=INR">
-        <button style="padding:15px 30px; font-size:18px;">
-            Pay ₹5000
-        </button>
-    </a>
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f7fc;
+}
+
+.header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.header h1{
+    margin:0;
+}
+
+.container{
+    max-width:500px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+label{
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.info{
+    background:#eef4ff;
+    padding:15px;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+.pay-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#0066cc;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+}
+
+.pay-btn:hover{
+    background:#004f9e;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>National Institute of Advanced Technology</h1>
+    <p>Student Upskill Program Fee Payment Portal</p>
+</div>
+
+<div class="container">
+
+<label>Student Name</label>
+<input type="text" placeholder="Enter Name">
+
+<label>Enrollment Number</label>
+<input type="text" placeholder="Enter Enrollment Number">
+
+<div class="info">
+    <p><b>Program:</b> Full Stack Development Upskill Program</p>
+    <p><b>Session:</b> 2026-27</p>
+    <p><b>Fee Amount:</b> ₹5000</p>
+</div>
+
+<a href="upi://pay?pa=6397008427@fam&pn=Ram%20Singh&am=5000&cu=INR">
+<button class="pay-btn">
+Pay ₹5000 via UPI
+</button>
+</a>
+
+</div>
+
 </body>
 </html>
